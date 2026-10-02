@@ -20,3 +20,8 @@ The home page links to these external full guides:
 - https://www.affichfoot.com/2026/09/the-ultimate-guide-to-crochet-for.html
 - https://www.affichfoot.com/2026/09/free-amigurumi-bear-pattern-easy-step.html
 - https://www.affichfoot.com/2026/09/cozy-autumn-crochet-decor-ideas-how-to.html
+
+## Visual refresh
+- Responsive four-card pattern grid on desktop, two cards on tablet, and one on mobile.
+- Added an SVG flower brand mark in `assets/logo.svg`.
+- Improved image alt text, lazy loading, focus indicators, and meta description.
