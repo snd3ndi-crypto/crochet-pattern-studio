@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore crochet patterns, learn stitches, and calculate yarn and stitch counts with Crochet Pattern Studio.">
+  <meta name="theme-color" content="#f8f5f0">
+  <title>Crochet Pattern Studio | Patterns, Guides & Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A little creativity, one stitch at a time <span aria-hidden="true">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Crochet Pattern Studio home">
+      <span class="brand-mark" aria-hidden="true">✿</span>
+      <span><strong>Crochet</strong><small>Pattern Studio</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#patterns">Patterns</a>
+      <a href="#calculator">Stitch calculator</a>
+      <a href="#guides">Learn</a>
+      <a class="nav-cta" href="#blog">Visit AffichFoot ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> YOUR NEXT HAPPY PLACE</p>
+        <h1>Make something<br><em>wonderfully</em> handmade.</h1>
+        <p class="hero-intro">Fresh crochet inspiration, beginner-friendly guides, and practical tools to help turn your next skein into something special.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#patterns">Explore patterns <span>→</span></a>
+          <a class="text-link" href="#calculator">Try the stitch calculator</a>
+        </div>
+        <div class="hero-proof"><span class="avatars" aria-hidden="true"><i>✿</i><i>✳</i><i>❋</i></span><span>Made for curious makers at every skill level</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image" role="img" aria-label="Colorful handmade crochet squares and yarn"></div>
+        <div class="floating-note"><span>✦</span><div><strong>Slow down. Stitch on.</strong><small>Your next project starts here.</small></div></div>
+        <div class="round-stamp">MADE WITH<br>LOVE & YARN</div>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="What you can find">
+      <div><span>01</span><strong>Patterns to try</strong><small>Ideas for every skill level</small></div>
+      <div><span>02</span><strong>Tools that help</strong><small>Plan stitches with confidence</small></div>
+      <div><span>03</span><strong>Learn as you go</strong><small>Clear, practical guides</small></div>
+    </section>
+
+    <section class="section patterns-section" id="patterns">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PATTERN EDIT</p><h2>Find your next project.</h2><p class="section-subtitle">A little inspiration for whatever you feel like making today.</p></div>
+        <a class="text-link desktop-link" href="#blog">More tutorials on the blog ↗</a>
+      </div>
+      <div class="filter-row">
+        <div class="filter-pills" id="filterPills" role="group" aria-label="Filter patterns">
+          <button class="filter-pill active" data-filter="all">All projects</button>
+          <button class="filter-pill" data-filter="beginner">Beginner</button>
+          <button class="filter-pill" data-filter="home">Home décor</button>
+          <button class="filter-pill" data-filter="accessories">Accessories</button>
+          <button class="filter-pill" data-filter="flowers">Flowers</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="patternSearch" type="search" placeholder="Search patterns…" aria-label="Search patterns"></label>
+      </div>
+      <div class="pattern-grid" id="patternGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No patterns match that search. Try another word.</p>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="calculator-copy">
+        <p class="eyebrow light-eyebrow">YOUR POCKET-SIZED HELPER</p>
+        <h2>Count less.<br><em>Create more.</em></h2>
+        <p>Estimate the starting stitch count for a project using your gauge swatch. Your own measurements make the result much more useful.</p>
+        <div class="tip-card"><span>✦</span><p><strong>Maker tip</strong><br>Make a gauge swatch in the stitch pattern you plan to use, then measure the stitches across 10 cm (4 in).</p></div>
+      </div>
+      <div class="calculator-card">
+        <div class="calc-card-head"><div><span class="tool-icon">⌗</span><h3>Stitch calculator</h3></div><span class="beta-label">FREE TOOL</span></div>
+        <p class="calc-description">Estimate stitches for your desired width.</p>
+        <form id="calculatorForm">
+          <label for="width">Desired project width <span class="unit">(cm)</span></label>
+          <div class="input-wrap"><input id="width" type="number" min="1" max="500" step="0.1" value="40" required><span>cm</span></div>
+          <div class="form-two">
+            <div><label for="gaugeStitches">Stitches in your swatch</label><input id="gaugeStitches" type="number" min="1" max="200" step="1" value="16" required></div>
+            <div><label for="gaugeWidth">Swatch width <span class="unit">(cm)</span></label><input id="gaugeWidth" type="number" min="0.1" max="100" step="0.1" value="10" required></div>
+          </div>
+          <label for="multiple">Pattern stitch multiple <span class="unit">(optional)</span></label>
+          <select id="multiple"><option value="1">Any stitch count</option><option value="2">Multiple of 2</option><option value="3">Multiple of 3</option><option value="4">Multiple of 4</option><option value="6">Multiple of 6</option><option value="8">Multiple of 8</option><option value="10">Multiple of 10</option></select>
+          <button class="button button-dark calc-button" type="submit">Calculate stitches <span>→</span></button>
+        </form>
+        <div class="result-box" id="calcResult" aria-live="polite"><span class="result-label">YOUR ESTIMATE</span><strong id="resultNumber">64 stitches</strong><p id="resultText">Based on your gauge and chosen width.</p></div>
+        <p class="fine-print">This is an estimate, not a finished pattern. Check the pattern repeat and make a swatch before starting.</p>
+      </div>
+    </section>
+
+    <section class="section learn-section" id="guides">
+      <div class="section-heading">
+        <div><p class="eyebrow">BUILD YOUR SKILLS</p><h2>Small lessons. Big progress.</h2><p class="section-subtitle">Refresh the basics or pick up a new technique for your next project.</p></div>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card guide-one"><div class="guide-number">01 / START HERE</div><div class="guide-illustration">◌</div><h3>Crochet basics</h3><p>Get comfortable with yarn, hooks, slip knots, and your first chain.</p><a class="text-link blog-link" data-article="basics" href="#blog">Visit AffichFoot (football) ↗</a></article>
+        <article class="guide-card guide-two"><div class="guide-number">02 / FIND YOUR RHYTHM</div><div class="guide-illustration">〰</div><h3>Stitch library</h3><p>Explore common stitches and learn when to use each one.</p><a class="text-link blog-link" data-article="stitches" href="#blog">Visit AffichFoot (football) ↗</a></article>
+        <article class="guide-card guide-three"><div class="guide-number">03 / MAKE IT YOURS</div><div class="guide-illustration">✿</div><h3>Finishing touches</h3><p>Learn how to weave in ends, block your work, and care for handmade pieces.</p><a class="text-link blog-link" data-article="finishing" href="#blog">Visit AffichFoot (football) ↗</a></article>
+      </div>
+    </section>
+
+    <section class="blog-banner" id="blog">
+      <div class="banner-flower" aria-hidden="true">✿</div>
+      <div><p class="eyebrow">EXTERNAL WEBSITE</p><h2>Visit AffichFoot</h2><p>This link opens AffichFoot, a football-focused website. Crochet tutorials are not hosted there.</p></div>
+      <a class="button button-light" id="mainBlogLink" href="#" target="_blank" rel="noopener">Visit AffichFoot <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">✿</span><span><strong>Crochet</strong><small>Pattern Studio</small></span></a>
+    <p>Made for makers, one stitch at a time.</p>
+    <div class="footer-links"><a href="#patterns">Patterns</a><a href="#calculator">Calculator</a><a href="#guides">Guides</a><a id="footerBlogLink" href="#" target="_blank" rel="noopener">AffichFoot ↗</a></div>
+    <small class="copyright">© <span id="year"></span> Crochet Pattern Studio. Keep creating.</small>
+  </footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
