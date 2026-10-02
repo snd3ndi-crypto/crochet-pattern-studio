@@ -13,3 +13,10 @@ Keep GitHub Pages configured for `main` and `/(root)`.
 
 ## Before AdSense
 Replace stock images with your own or properly licensed images, verify every image URL, expand guides with original useful content, add a genuine contact method, and adapt the privacy policy to services actually used. Configure Google Search Console and submit sitemap.xml. AdSense approval is not guaranteed. This package intentionally does not include AdSense code.
+
+## Linked AffichFoot crochet articles
+The home page links to these external full guides:
+- https://www.affichfoot.com/2026/09/the-ultimate-collection-of-free-crochet.html
+- https://www.affichfoot.com/2026/09/the-ultimate-guide-to-crochet-for.html
+- https://www.affichfoot.com/2026/09/free-amigurumi-bear-pattern-easy-step.html
+- https://www.affichfoot.com/2026/09/cozy-autumn-crochet-decor-ideas-how-to.html
