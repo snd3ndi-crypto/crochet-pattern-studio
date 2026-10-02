@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://snd3ndi-crypto.github.io/crochet-pattern-studio/sitemap.xml
