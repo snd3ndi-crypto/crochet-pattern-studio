@@ -25,3 +25,6 @@ The home page links to these external full guides:
 - Responsive four-card pattern grid on desktop, two cards on tablet, and one on mobile.
 - Added an SVG flower brand mark in `assets/logo.svg`.
 - Improved image alt text, lazy loading, focus indicators, and meta description.
+
+## Local card images
+The four home-page cards use local WebP illustrations in `assets/` to avoid broken third-party image URLs. Keep the `assets` folder when uploading to GitHub Pages.
